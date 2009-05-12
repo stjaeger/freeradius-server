@@ -23,6 +23,7 @@ sql_log {
 	acct_table = "radacct"
 	postauth_table = "radpostauth"
 	sql_user_name = "%{%{User-Name}:-DEFAULT}"
+	utf8 = no
 
 	Start = "INSERT INTO ${acct_table} (AcctSessionId, UserName, \
 	 NASIPAddress, FramedIPAddress, AcctStartTime, AcctStopTime, \
