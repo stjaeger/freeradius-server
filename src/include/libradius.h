@@ -234,6 +234,7 @@ int     	vp_prints(char *out, size_t outlen, VALUE_PAIR *vp);
 void		vp_print(FILE *, VALUE_PAIR *);
 void		vp_printlist(FILE *, VALUE_PAIR *);
 #define		fprint_attr_val vp_print
+int		utf8_char(uint8_t *str);
 
 /*
  *	Dictionary functions.
